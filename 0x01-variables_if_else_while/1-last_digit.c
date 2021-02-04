@@ -21,7 +21,7 @@ int main(void)
 
 	if (i == 0)
 	{
-		printf("%s %d is %d and is zero\n", a, n, i);
+		printf("%s %d is %d and is 0\n", a, n, i);
 	}
 	else
 	{
