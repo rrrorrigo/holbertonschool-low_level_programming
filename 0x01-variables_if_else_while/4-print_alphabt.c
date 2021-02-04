@@ -1,12 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main (void)
+/**
+ * main - Entry point
+ * print alphabet without e and q
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
-	for (ch = 'a' ; ch <= 'Z' ; ch++)
+	char ch = 'a';
+
+	for (; ch <= 'z' ; ch++)
 	{
-		if ()
+		if !(ch == 'e' || ch == 'q')
+		{
 		putchar(ch);
+		}
 	}
+	putchar('\n');
 
 	return (0);
 }
