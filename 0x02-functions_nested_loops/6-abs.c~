@@ -1,0 +1,15 @@
+#include "holberton.h"
+/**
+ * _abs -check the code.
+ *
+ * @c: external value that was check
+ *
+ * Return: 1 if c is lowercase or return 0 otherwise.
+ */
+int _abs(int c)
+{
+	if (c != '-' && c != '+')
+	{
+		return (c);
+	}
+}
