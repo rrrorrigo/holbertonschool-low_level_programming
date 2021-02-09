@@ -1,6 +1,5 @@
 #include <ctype.h>
 #include "holberton.h"
-#include <stdlib.h>
 
 /**
  * _islower -check the code.
@@ -12,12 +11,14 @@
 
 int _islower(int c)
 {
-	if (islower(c))
+	char x = 'a';
+
+	for (; x <= 'z'; x++)
 	{
-		return (1);
+		if (x == c)
+		{
+			return (1);
+		}
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
