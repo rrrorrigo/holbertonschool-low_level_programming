@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
  * print_last_digit - check the code.
  *
@@ -16,7 +17,9 @@ int print_last_digit(int c)
 	{
 		c = (-1) * c;
 	}
+
 	ld = c % 10;
 	_putchar('0' + ld);
+
 	return (ld);
 }
