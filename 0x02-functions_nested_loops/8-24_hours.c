@@ -1,41 +1,26 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_last_digit - check the code
+ * jack_bauer - check the code
  *
- * Return: the last digit.
+ * Return: print every minute of the day of Jack Bauer.
  */
 
 void jack_bauer(void)
 {
-	int s = 0;
-	int s2 = 0;
-	int m = 0;
-	int m2 = 0;
+	int i;
+	int j;
 
-	for (; s < 10; s++)
+	for (i = 0; i <= 23; i++)
 	{
-		_putchar('0' + m2);
-		_putchar('0' + m);
-		_putchar(':');
-		_putchar('0' + s2);
-		_putchar('0' + s);
-		_putchar('\n');
-		if (s == 9)
+		for (j = 0; j <= 59; j++)
 		{
-			s = 0;
-			s2++;
-			if (s2 == 9)
-			{
-				s2 = 0;
-				m++;
-				if (m == 9)
-				{
-					m = 0;
-					m2++;
-					if (m2 == 2 && m == 3 && s2 == 5 && s == 9)
-					{
-						s = 10;
+			_putchar('0' + (i / 10));
+			_putchar('0' + (i % 10));
+			_putchar(':');
+			_putchar('0' + (j / 10));
+			_putchar('0' + (j % 10));
+			_putchar('\n');
 		}
 	}
 }
