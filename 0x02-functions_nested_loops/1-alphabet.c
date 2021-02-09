@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - print the alphabet.
  *
- * Description: print the alphabet
+ * Description: the function print_alphabet print the alphabet
  */
+
 void print_alphabet(void)
 {
 	char x;
