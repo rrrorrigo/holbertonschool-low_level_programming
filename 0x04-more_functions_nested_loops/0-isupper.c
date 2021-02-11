@@ -4,7 +4,9 @@
 /**
  * _isupper - check if the value is uppercase letter.
  *
- * Description: si
+ * @c: external value
+ *
+ * Return: 1 if is upper or 0 if is otherwise
  */
 
 int _isupper(int c)

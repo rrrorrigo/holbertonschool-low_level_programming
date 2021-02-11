@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * add - check the code.
+ * mul - check the code.
  *
  * @a: external value that was multiplied
  * @b: external value that multiplie to a

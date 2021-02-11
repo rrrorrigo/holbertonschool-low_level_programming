@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 - print the alphabet 10 times.
+ * more_numbers - print the numbers from 0 to 14 10 times.
  *
  *
  */

@@ -6,13 +6,14 @@
  *
  * Description: print the numbers from 1 to 100
  *
+ * Return: 0
  */
 
 int main(void)
 {
 	int i = 0;
 
-	for(; i <= 100; i++)
+	for (; i <= 100; i++)
 	{
 		if ((i % 3) == 0)
 		{
