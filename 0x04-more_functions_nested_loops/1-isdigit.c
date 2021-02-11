@@ -10,14 +10,10 @@
 
 int _isdigit(int c)
 {
-	int x = 0;
-
-	for (; x < 10; x++)
+	if (c <= 9 && c >= 0)
 	{
-		if (x == c)
-		{
-			return (1);
-		}
+		return (1);
 	}
+
 	return (0);
 }
