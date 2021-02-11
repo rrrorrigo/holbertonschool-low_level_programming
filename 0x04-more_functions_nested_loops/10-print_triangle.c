@@ -21,7 +21,7 @@ void print_triangle(int size)
 			{
 				_putchar(32);
 			}
-			int iii = size - i;
+			int iii = (size - i);
 
 			for (; iii <= size; iii++)
 			{
