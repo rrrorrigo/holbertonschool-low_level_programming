@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * _isdigit -check the code.
  *
