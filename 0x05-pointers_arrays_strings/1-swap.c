@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * reset_to_98 - updates the value to 98.
+ * swap_int - swap the value of two integers.
  * @a: external value
  * @b: external value
  *
@@ -9,7 +9,7 @@
 
 void swap_int(int *a, int *b)
 {
-	*a = *a+*b;
-	*b = *a-*b;
-	*a = *a-*b;
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
 }
