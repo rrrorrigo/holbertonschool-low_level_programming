@@ -20,7 +20,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		mitad = length -((length - 1) / 2);
+		mitad = length - ((length - 1) / 2);
 	}
 	for (; mitad < length; mitad++)
 		_putchar(str[mitad]);
