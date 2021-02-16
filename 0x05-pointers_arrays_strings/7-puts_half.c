@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 #include "2-strlen.c"
 #include <stdio.h>
 
@@ -20,9 +20,7 @@ void puts_half(char *str)
 	{
 		mitad = (_strlen(str) - 1) / 2;
 	}
-for (; mitad < _strlen(str); mitad++)
-	{
+	for (; mitad < _strlen(str); mitad++)
 		_putchar(str[mitad]);
-	}
 	_putchar('\n');
 }
