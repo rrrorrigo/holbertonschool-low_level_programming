@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * _puts - print string.
@@ -15,7 +16,7 @@ void _puts(char *str)
 	{
 	}
 
-	for (i = 0; i <= length; i++)
+	for (i = 0; i < length; i++)
 	{
 		_putchar(str[i]);
 	}
