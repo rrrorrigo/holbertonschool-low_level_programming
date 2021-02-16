@@ -1,7 +1,0 @@
-#include "holberton.h"
-
-/**
- * reset_to_98 - updates the value to 98.
- * @c: external value
- * Return: 1 if is upper or 0 if is otherwise
- */
