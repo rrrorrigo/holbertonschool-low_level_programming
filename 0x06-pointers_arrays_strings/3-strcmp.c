@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _strncat - a.
+ * _strcmp - a.
  *
- * @dest: external value
- * @src: external value
- * @n: external value
+ * @s1: external value
+ * @s2: external value
+ *
  *Return: dest.
  */
 int _strcmp(char *s1, char *s2)
@@ -23,12 +23,10 @@ int _strcmp(char *s1, char *s2)
 		if (s1[i] != s2[i] && len > len2)
 		{
 			return (15);
-			break;
 		}
 		else if (s1[i] != s2[i] && len2 > len)
 		{
 			return (-15);
-			break;
 		}
 		else if (s1[i] != s2[i] && len == len2)
 		{
