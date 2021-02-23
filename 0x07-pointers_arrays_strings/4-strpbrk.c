@@ -9,6 +9,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
+
 	for (; accept[i] != '\0'; i++)
 	{
 		if ((*s != '\0') && *s != accept[i])
