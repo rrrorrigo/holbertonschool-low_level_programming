@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define NULL ((void *)0)
 /**
  * _strchr - function that copies memory area
  * @s: destiny character
@@ -10,5 +11,7 @@ char *_strchr(char *s, char c)
 {
 	while ((*s != '\0') && *s != c)
 		s++;
+	if (*s == '\0')
+		return (NULL);
 	return (s);
 }
