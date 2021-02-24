@@ -1,9 +1,11 @@
 #include "holberton.h"
 #include "2-strlen_recursion.c"
 /**
- * is_palindrome - check if the string is palindrome
- *
- * @s: source string
+ * is_PalRec - check if the string is palindrome
+ * @str: source string
+ * @i: source integer
+ * @e: length of string
+ * Return: if the string is palindrome 1, is otherwise 0
  */
 int is_PalRec(char *str, int s, int e)
 {
@@ -18,6 +20,11 @@ int is_PalRec(char *str, int s, int e)
 
 	return (1);
 }
+/**
+ * is_palindrome - check if the string is palindrome
+ * @s: source string
+ * Return: if the string is palindrome 1, is otherwise 0
+ */
 
 int is_palindrome(char *s)
 {
