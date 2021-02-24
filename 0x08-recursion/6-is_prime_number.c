@@ -7,17 +7,10 @@
  */
 int is_prime_number(int n)
 {
-	int i = n;
-
-	if (i == 1)
-	{
-		return (1);
-	}
+	if ((n / 2) < 2)
+		return (0);
+	if (n % (n / 2))
+	    return (1);
 	else
-	{
-		if (n % i == 0)
-			return (0);
-		else
-			return (is_prime_number(n - 1));
-	}
+		return (is_prime_number(n / 2));
 }
