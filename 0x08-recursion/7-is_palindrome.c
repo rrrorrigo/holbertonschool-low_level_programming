@@ -3,7 +3,7 @@
 /**
  * is_PalRec - check if the string is palindrome
  * @str: source string
- * @i: source integer
+ * @s: source integer
  * @e: length of string
  * Return: if the string is palindrome 1, is otherwise 0
  */
@@ -29,5 +29,6 @@ int is_PalRec(char *str, int s, int e)
 int is_palindrome(char *s)
 {
 	int n = _strlen_recursion(s);
+
 	return (is_PalRec(s, 0, n - 1));
 }
