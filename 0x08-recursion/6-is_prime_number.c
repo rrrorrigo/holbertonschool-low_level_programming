@@ -1,0 +1,23 @@
+#include "holberton.h"
+/**
+ * is_prime_number - return if the input integer is a prime number
+ *
+ * @n: source int
+ * Return: 1 if is a primer number, otherwise return 0
+ */
+int is_prime_number(int n)
+{
+	int i = n;
+
+	if (i == 1)
+	{
+		return (1);
+	}
+	else
+	{
+		if (n % i == 0)
+			return (0);
+		else
+			return (is_prime_number(n - 1));
+	}
+}
