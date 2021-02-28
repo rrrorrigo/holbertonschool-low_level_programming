@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <ctype.h>
 #include <string.h>
 #include <stdio.h>
 /**
@@ -9,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1, addition = 0;
+	int i = 0, ii = 0, addition = 0;
 
 	if (argc == 1)
 	{
@@ -17,16 +18,16 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (; i < argc; i++)
-		if (*argv[i] >= 48 && *argv[i] <= 57)
-		{
-			addition += atoi(argv[i]);
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+	for (i = 1; i < argc; i++)
+	{
+		for(; argv[i][ii]; ii++)
+			if (isdigit(argv[i][ii]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		addition += atoi(argv[i]);
+	}
 	printf("%d\n", addition);
 	return (0);
 }
