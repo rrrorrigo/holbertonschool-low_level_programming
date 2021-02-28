@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 
 	for (; i < argc; i++)
-		if (*argv[i] >= 'a' && *argv[i] <= 'z')
+		if (*argv[i] >= 'a' && *argv[i] <= 'z' || *argv[i] == '-')
 		{
 			printf("Error\n");
 			return (1);
