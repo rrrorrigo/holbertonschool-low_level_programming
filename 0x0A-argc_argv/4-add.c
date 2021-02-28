@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for(; argv[i][ii]; ii++)
+		for (; argv[i][ii]; ii++)
 			if (isdigit(argv[i][ii]) == 0)
 			{
 				printf("Error\n");
