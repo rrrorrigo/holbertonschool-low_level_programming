@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
 	}
 
 	for (; i < argc; i++)
-		if ((*argv[i] >= 'a' && *argv[i] <= 'z') || *argv[i] == '-')
+		if (*argv[i] >= 48 && *argv[i] <= 57)
 		{
-			printf("Error\n");
-			return (1);
+			addition += atoi(argv[i]);
 		}
 		else
 		{
-			addition += atoi(argv[i]);
+			printf("Error\n");
+			return (1);
 		}
 	printf("%d\n", addition);
 	return (0);
