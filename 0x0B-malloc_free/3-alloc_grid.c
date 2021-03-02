@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_array - prints buffer in hexa
- * @size: te size of the memory to copy
- * @c: the char to copy
+ * alloc_grid - return bidimentional array
+ * @width: width of array
+ * @height: height of array
  *
- * Return: char.
+ * Return: array of int.
  */
 int **alloc_grid(int width, int height)
 {
@@ -18,18 +18,13 @@ int **alloc_grid(int width, int height)
 	grid = malloc(width * sizeof(int));
 	if (grid == NULL)
 		return (NULL);
-	for (alto = 0; alto <= height; alto++)
-	{
-		grid[alto] = malloc(height * sizeof(int));
-		if (grid[alto] == NULL)
-			return (NULL);
-	}
 	for (alto = 0; alto < height; alto++)
 	{
+		grid[alto] = malloc(height * sizeof(int));
 		if (!grid[alto])
 		{
 			for (ancho = 0; ancho < alto; ancho++)
-				free(grid[alto]);
+				free(grid[ancho]);
 			free(grid);
 			return (NULL);
 		}
