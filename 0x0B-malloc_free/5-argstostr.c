@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * argtostr - concatenate and print all the arguments
+ * argstostr - concatenate and print all the arguments
  * @ac: number of arguments
  * @av: bidimensional string of arguments
  *
