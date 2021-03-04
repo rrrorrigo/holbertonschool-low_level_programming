@@ -13,10 +13,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *allocmem;
 	unsigned int i;
 
-	allocmem = malloc(nmemb * size);
-	if (!allocmem || nmemb == 0 || size == 0)
+	if (!nmemb || !size)
 		return (NULL);
-	for (i = 0; i <= (nmemb * size); i++)
+	allocmem = malloc(nmemb * size);
+	if (!allocmem)
+		return (NULL);
+	for (i = 0; i < (nmemb * size); i++)
 		allocmem[i] = 0;
 	return (allocmem);
 }
