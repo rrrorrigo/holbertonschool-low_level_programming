@@ -10,12 +10,12 @@
  */
 int *array_range(int min, int max)
 {
-	int contador, i;
+	int contador = 0, i;
 	int *array;
 
 	if (min > max)
 		return (NULL);
-	for (contador = 0; contador <= (max - min); contador++)
+	for (; contador <= (max - min); contador++)
 		;
 	array = malloc(contador * sizeof(int));
 	if (!array)
