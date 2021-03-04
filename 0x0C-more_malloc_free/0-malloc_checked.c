@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_array - prints buffer in hexa
- * @size: te size of the memory to copy
- * @c: the char to copy
+ * malloc_checked - allocate memory
+ * @b: te size of the memory to allocate
  *
- * Return: char.
+ * Return: void pointer.
  */
 void *malloc_checked(unsigned int b)
 {
