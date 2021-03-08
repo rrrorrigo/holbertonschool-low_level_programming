@@ -12,5 +12,12 @@ struct dog
 	float age;
 	char *owner;
 };
+/**
+ * init_dog - initalize a variable of type struct dog
+ * @d: pointer to struct dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: name of owner dog
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
