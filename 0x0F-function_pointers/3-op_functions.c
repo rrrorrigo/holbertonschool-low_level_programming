@@ -4,6 +4,7 @@
  *
  * @a: number one
  * @b: number two
+ * Return: addition of two numbers
  */
 int op_add(int a, int b)
 {
@@ -14,6 +15,7 @@ int op_add(int a, int b)
  *
  * @a: number one
  * @b: number two
+ * Return: difference between two numbers
  */
 int op_sub(int a, int b)
 {
@@ -25,6 +27,7 @@ int op_sub(int a, int b)
  *
  * @a: number one
  * @b: number two
+ * Return: mul of two numbers
  */
 int op_mul(int a, int b)
 {
@@ -36,6 +39,7 @@ int op_mul(int a, int b)
  *
  * @a: number one
  * @b: number two
+ * Return: division of two numbers
  */
 int op_div(int a, int b)
 {
@@ -47,6 +51,7 @@ int op_div(int a, int b)
  *
  * @a: number one
  * @b: number two
+ * Return: modulo of two numbers
  */
 int op_mod(int a, int b)
 {

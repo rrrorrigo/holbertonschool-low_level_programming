@@ -1,8 +1,12 @@
-#include "3-calc.h"
+B#include "3-calc.h"
+
 /**
  * main - main function
+ * @argv - arguments value
+ * @argc - arguments counter
  * Return: Always 0.
  */
+
 int main(int argc, char *argv[])
 {
 	int res;
@@ -19,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-if ((atoi(argv[2]) == '/' || atoi(argv[2]) == '%') && atoi(argv[3]) == '0')
+	if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == '0')
 	{
 		printf("Error\n");
 		exit(100);

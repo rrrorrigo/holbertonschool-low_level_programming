@@ -4,8 +4,9 @@
  * get_op_func - select the correct function
  *
  * @s: The operator
+ * Return: correct function
  */
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -16,10 +17,11 @@ int (*get_op_func(char *s))(int a, int b)
 		{NULL, NULL}
 	};
 	int i = 0;
+
 	while (ops[i].op)
 	{
 		if (*(ops[i].op) == *s)
-			return(ops[i].f);
+			return (ops[i].f);
 		i++;
 	}
 	return (NULL);
