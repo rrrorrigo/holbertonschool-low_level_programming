@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stddef.h>
 
 /**
  * array_iterator - function that execute a function
@@ -7,6 +6,7 @@
  * @size: size of array
  * @action: name of function
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (action)
