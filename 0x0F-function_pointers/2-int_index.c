@@ -6,6 +6,7 @@
  * @array: element to print in the cmp function
  * @size: size of array
  * @cmp: name of function
+ * Return: int of index
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
