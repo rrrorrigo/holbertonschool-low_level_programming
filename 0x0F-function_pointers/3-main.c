@@ -2,8 +2,8 @@
 
 /**
  * main - main function
- * @argv - arguments value
- * @argc - arguments counter
+ * @argv: pointer of arguments value
+ * @argc: integer of arguments counter
  * Return: Always 0.
  */
 
