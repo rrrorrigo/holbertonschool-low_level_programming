@@ -1,4 +1,4 @@
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * array_iterator - function that execute a function
