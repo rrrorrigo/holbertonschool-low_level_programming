@@ -1,0 +1,16 @@
+#include "variadic_functions.h"
+/**
+ * print_strings - print string of parameters.
+ * @separator: separator of parameters
+ * @n: number of parameters
+ * @...: parameters string
+ * Return: Always 0.
+ */
+void print_strings(const char *separator, const unsigned int n, ...)
+{
+	va_list up;
+	unsigned int i = 0;
+
+	va_start(up, n);
+for
+}
