@@ -1,0 +1,25 @@
+#include "variadic_functions.h"
+#include <stdio.h>
+/**
+ * print_all - print anything.
+ * @format: type of argument passed
+ * @...: parameters value
+ */
+void print_all(const char * const format, ...)
+{
+	va_start up;
+	int index = 0, c, i, f, s;
+
+	while (format[index] != '\0')
+	{
+		if (format[index] == 'c')
+			c = 1;
+		if (format[index] == 'i')
+			i = 1;
+		if (format[index] == 'f')
+			f = 1;
+		if (format[index] == 's')
+			s = 1;
+		index++;
+	}
+}
