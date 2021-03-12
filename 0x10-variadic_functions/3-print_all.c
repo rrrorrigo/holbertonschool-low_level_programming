@@ -75,7 +75,7 @@ void _string(va_list up)
 	char *check;
 
 	check = va_arg(up, char *);
-	if(!check)
+	if (!check)
 		check = "(nil)";
 	printf("%s", check);
 }

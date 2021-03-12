@@ -7,6 +7,11 @@ void _int(va_list up);
 void _float(va_list up);
 void _string(va_list up);
 
+/**
+ * tipo - check the format that be printed
+ * @c: type of format
+ * @ptrfunc: pointer to the function that print by format
+ */
 typedef struct tipo
 {
 	char *c;
