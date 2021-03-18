@@ -7,7 +7,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	int nodo;
+	int nodo = 0;
 
 	if (h)
 	{
