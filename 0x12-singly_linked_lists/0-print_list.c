@@ -7,7 +7,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	int nodo = 0;
+	size_t nodo = 0;
 
 	if (h)
 	{
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		}
 		else
-			printf("[%i] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		nodo++;
 		print_list(h->next);
 	}
