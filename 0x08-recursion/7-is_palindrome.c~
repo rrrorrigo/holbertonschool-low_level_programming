@@ -1,0 +1,12 @@
+#include "holberton.h"
+/**
+ * is_palindrome - check if the string is palindrome
+ *
+ * @s: source string
+ */
+int is_palindrome(char *s)
+{
+	int i = 1 + is_palindrome(s + 1);
+
+	_putchar(i);
+}

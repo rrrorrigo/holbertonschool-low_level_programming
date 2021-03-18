@@ -1,0 +1,58 @@
+#include "holberton.h"
+/**
+ * cap_string - print string.
+ * @a: external value
+ * Return: a
+ */
+char *cap_string(char *a)
+{
+	int i;
+
+	if (s[0] >= 97 && s[0] <= 122)
+		s[0] -= 32;
+
+	while (*a)
+	{
+if (a[i]==' ' || a[i] == 9 || a[i] == 10 || a[i] == ',' ||a[i] == ';')
+		{
+			++i;
+			if (a[i]>='a' && a[i]<='z')
+			{
+				a[i]=a[i]-32;
+			}
+		}
+		if (a[i] == '.' || a[i] == '!' || a[i] == '?')
+		{
+			++i;
+                        if (a[i] >= 'a' && a[i] <= 'z')
+			{
+				a[i] = a[i] - 32;
+				continue;
+			}
+		}
+		if (a[i] == '"' || a[i] == '(' || a[i] == ')' || a[i] == '{')
+		{
+			++i;
+			if (a[i] >= 'a' && a[i] <= 'z')
+			{
+				a[i] = a[i] - 32;
+				continue;
+			}
+		}
+		if (a[i] == '}')
+		{
+			++i;
+			if (a[i] >= 'a' && a[i] <= 'z')
+			{
+				a[i]=a[i]-32;
+				continue;
+			}
+		}
+		else
+		{
+			if (a[i] >= 'A' && a[i] <= 'Z')
+				a[i] = a[i] + 32;
+		}
+	}
+	return (a);
+}
