@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list_len - function that return the number of elements
+ * listint_len - function that return the number of elements
  * @h: pointer to it struct
  * Return: the number of nodes
  */
