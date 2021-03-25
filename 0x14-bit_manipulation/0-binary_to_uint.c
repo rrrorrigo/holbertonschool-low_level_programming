@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  * binary_to_uint - convert binary number to an unsigned int
  * @b: pointer to a string of 0 and 1 chars.
