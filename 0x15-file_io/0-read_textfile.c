@@ -5,7 +5,6 @@
  * @letters: number of letters it should read and print
  * Return: number of letters it could read and print, if it fails return 0
  */
-#define MAXCHAR 1000
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
