@@ -60,7 +60,7 @@ int main(int argc, char **argv)
 	if (characters < 0)
 		error_read(argv[1]);
 	if (close(file_from) < 0 )
-		error_close(file_fom);
+		error_close(file_from);
 	if (close(file_to) < 0)
 		error_close(file_to);
 	return (0);
