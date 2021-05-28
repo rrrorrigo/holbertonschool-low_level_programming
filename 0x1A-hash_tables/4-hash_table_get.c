@@ -7,11 +7,13 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int i = key_index((unsigned char *)key, ht->size);
-	hash_node_t *aux = ht->array[i];
+	unsigned long int i;
+	hash_node_t *aux;
 
 	if (!ht || !key)
 		return (NULL);
+	i = key_index((unsigned char *)key, ht->size);
+	aux = ht->array[i];
 	while (aux)
 	{
 		if (strcmp(aux->key, key) == 0)
