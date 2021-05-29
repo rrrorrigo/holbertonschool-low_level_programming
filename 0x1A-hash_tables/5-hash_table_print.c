@@ -5,21 +5,21 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = ht->size, ii = 0;
+	unsigned long int i = 0;
 	short int aux = 0;
 	hash_node_t *arr;
 
 	if (!ht)
 		return;
 	printf("{");
-	for (; ii < i; ii++)
+	for (; i < ht->size; i++)
 	{
-		arr = ht->array[ii];
+		arr = ht->array[i];
 		for (; arr; arr = arr->next)
 		{
 			if (aux)
 				printf(", ");
-			printf("'%s': '%s'", arr->key, arr->val);
+			printf("'%s': '%s'", arr->key, arr->value);
 			aux = 1;
 		}
 	}
