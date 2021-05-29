@@ -18,8 +18,8 @@ void hash_table_print(const hash_table_t *ht)
 		arr = ht->array[ii];
 		for (; arr; arr = arr->next)
 		{
-			key = ht->array[ii]->key;
-			val = ht->array[ii]->value;
+			key = arr->key;
+			val = arr->value;
 			if (aux)
 				printf("\'%s\': \'%s\'", key, val);
 			else
