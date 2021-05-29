@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (!ht)
 		return;
-	putchar('{');
+	printf("{");
 	for (; ii < i; ii++)
 	{
 		arr = ht->array[ii];
@@ -21,9 +21,9 @@ void hash_table_print(const hash_table_t *ht)
 			key = arr->key;
 			val = arr->value;
 			if (aux)
-				printf("\'%s\': \'%s\'", key, val);
+				printf("'%s': '%s'", key, val);
 			else
-				printf(", \'%s\': \'%s\'", key, val);
+				printf(", '%s': '%s'", key, val);
 			aux = 0;
 		}
 	}
