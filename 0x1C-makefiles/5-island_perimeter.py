@@ -27,12 +27,3 @@ def island_perimeter(grid):
                 elif grid[i + 1][j] == 0:
                     returnvalue += 1
     return returnvalue
-
-grid = [
-    [0, 0, 0, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0],
-    [0, 1, 1, 1, 0, 0],
-    [0, 0, 0, 0, 0, 0]
-]
-print(island_perimeter(grid))
